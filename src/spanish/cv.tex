@@ -1,0 +1,108 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.5in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+\setromanfont [Ligatures={Common}, BoldFont={Fontin Bold}, ItalicFont={Fontin Italic}]{Fontin}
+\setsansfont [Ligatures={Common}, BoldFont={Fontin Sans Bold}, ItalicFont={Fontin Sans Italic}]{Fontin Sans}
+\setmonofont[Scale=0.8]{Monaco} 
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Fontin}\selectfont\itshape\&}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\rmfamily\mdseries\upshape\Large}
+\subsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+\subsubsectionfont{\rmfamily\mdseries\upshape\normalsize} 
+
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={CV Gabriel Diegel},pdfauthor={Gabriel Diegel}]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+
+% DOCUMENT
+\begin{document}
+{\LARGE Gabriel Diegel}\\[1cm]
+Av. Grau 490\\
+\texttt{15046} Lima, Perú\\[.2cm]
+Fecha de nacimiento: 20 de Diciembre de 1982\\
+Nacionalidad: alemán\\[.2cm]
+Teléfonos: \texttt{+4917664181625}\\
+Correo electrónico: \href{mailto:gabriel.diegel@icloud.com}{gabriel.diegel@icloud.com}\\
+
+%%\hrule
+\section*{Última posición}
+{\bf Senior Test Engineer}, 1\amper{}1 Internet SE, Karlsruhe, Germany
+
+%\hrule
+\section*{Habilidades}
+\subsection*{Lenguajes de programación}
+Java, Groovy, Kotlin, Python
+\subsection*{Tecnologías}
+Spring Boot, Docker, JUnit5 (Contribudor), Selenium Webdriver, Geb, Protractor, Maven, Git, GitlabCI, Jenkins, GoCD, Ansible, Kubernetes
+
+%\hrule
+\section*{Experiencia profesional}
+\years{2018--2019}{\bf Senior Test Engineer} 1\amper{}1 Internet SE, Karlsruhe, Alemania\\
+$\bullet$ Desarollé una estrategia modular de pruebas y herramientas para pruebas de frontend basadas en web\\
+$\bullet$ Desarollé y apoyé una estrategia y marco para la integración de pruebas de aceptación funcionales en el flujo de trabajo de entraga continua\\
+$\bullet$ Planifiqué, ejecuté y analizé pruebas de rendimiento para almacenamiento de mensajes de próxima generación y de un producto Single-Sign-On\\
+$\bullet$ Supervisé tesis de estudiantes de postgrado\\
+$\bullet$ Dirigí un grupo de trabajo de automatización de pruebas\\[.2cm]
+\years{2013--2018}{\bf Test Engineer} 1\amper{}1 Internet SE, Karlsruhe, Alemania\\
+$\bullet$ Desarollé conjuntos de pruebas de aceptación en Java para una amplia gama de servicios backend usando protocolos diversos como HTTP, SMTP, IMAP y POP3\\
+$\bullet$ Desarollé un marco declarativo en Java para pruebas de API basadas en HTTP\\
+$\bullet$ Desarollé un servicio web tipo RESTful y backend para recoger métricas de artefactos de software desplegados\\
+\newpage
+\years{2010--2013}{\bf Test Analyst} Atos Worldline GmbH, Frankfurt, Alemania\\
+$\bullet$ Analizé esfuerzos de prueba, creé planes de pruebas y creé datos de prueba\\
+$\bullet$ Planifiqué y ejecuté pruebas de aceptación manuales, asimismo apoyé pruebas de aceptación con clientes externos\\
+$\bullet$ Implementé un programa de automatización para pruebas de aceptación funcionales\\
+$\bullet$ Desarollé herramientas de CLI con Python para el gestionar datos de prueba extrayendo datos del mainframe, filtrándolos y cargándolos automaticamente en la base de datos Oracle\\
+$\bullet$ Analizé errores de sistema y apoyé al equipo de desarollo resolviendo incidentes de producción\\
+$\bullet$ Introduje y administré un servidor SVN para el equipo QA\\[.2cm]
+\years{2009--2010}{\bf Research Assistant} Fraunhofer IPM, Freiburg, Alemania\\
+$\bullet$ Desarollé un software de control para un sistema automatizado de detección de partículas en Matlab\\
+$\bullet$ Integré un sistema rápido de adquisición de datos basado en hardware
+
+%\hrule
+\section*{Formación Académica}
+\years{2009} {\bf Dipl.-Ing. (FH)} en Ingenieria Eléctrica, Hochschule Karlsruhe---Technik und Wirtschaft, Karlsruhe, Alemania\\
+Título de tesis: \emph{"Development of an automated image analysis software for a fluorescence--based data acquisition system for the detection of airborne microorganisms"}
+
+%\hrule
+\section*{Certificados}
+$\bullet$ ISTQB Certified Tester: Foundation Level
+
+%\hrule
+\section*{Idiomas}
+$\bullet$ alemán: Competencia nativa\\
+$\bullet$ español: Competencia profesional de trabajo\\
+$\bullet$ inglés: Competencia profesional plena
+
+%\hrule
+\section*{Aficiones}
+Escribir, viajar y cocinar\\
+
+%\hrule
+\section*{Artículos}
+\years{2015} \href{https://gitlab.com/gdiegel/writing-public/blob/master/custom\_assertions.md}{"Take your testing DSL to the next level with custom assertions"}\\
+\years{2016} \href{https://gitlab.com/gdiegel/writing-public/blob/master/junit5_feeble_screams_from_forests_well_known.md}{"JUnit5--Feeble screams from forests well known"}\\
+\years{2017} \href{https://gitlab.com/gdiegel/writing-public/blob/master/neo\_problem\_spring.md}{"Using neo-problem with a pure Spring Boot service"}\\
+\years{2018} \href{https://gitlab.com/gdiegel/writing-public/blob/master/custom\_test\_engine\_with\_kotlin.md}{"Writing a custom test engine with Kotlin"}
+
+\end{document}
