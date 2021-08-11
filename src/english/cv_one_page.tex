@@ -1,0 +1,70 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[9pt, a4paper]{extarticle}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=6in, textheight=9in, marginparsep=5.5pt, marginparwidth=.5in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+\setromanfont [Ligatures={Common}, BoldFont={Fontin Bold}, ItalicFont={Fontin Italic}]{Fontin}
+\setsansfont [Ligatures={Common}, BoldFont={Fontin Sans Bold}, ItalicFont={Fontin Sans Italic}]{Fontin Sans}
+\setmonofont[Scale=0.8]{Monaco} 
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Fontin}\selectfont\itshape\&}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\rmfamily\mdseries\upshape\Large}
+\subsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+\subsubsectionfont{\rmfamily\mdseries\upshape\normalsize} 
+
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={CV Gabriel Diegel},pdfauthor={Gabriel Diegel}]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+
+% DOCUMENT
+\begin{document}
+{\bf \LARGE Gabriel Diegel}\\[0.1cm]
+Lima, Peru\\[0.1cm]
+Email: \href{mailto:gabriel.diegel@icloud.com}{gabriel.diegel@icloud.com}\\[0.1cm]
+Github: \href{https://github.com/gdiegel}{https://github.com/gdiegel}\\
+
+\section*{Currently}
+{\bf Software Engineer} at {\bf Tekton} in Lima, Peru
+
+\section*{Specialized in}
+Cloud-native Software Development, Continuous Delivery, Automated Acceptance Testing
+
+\section*{Skills}
+\subsection*{Programming languages}
+Java, Python, Javascript, Groovy, R
+\subsection*{Technologies}
+Spring Boot, Maven, Docker, JUnit5, Selenium Webdriver, Git, GitlabCI, Jenkins, Grafana, Kubernetes, PostgreSQL, InfluxDB, Azure
+
+\section*{Experience}
+\years{2019-current}{\bf Software Engineer} at {\bf Tekton} in Lima, Peru\\
+\years{2018-2019}{\bf Senior Test Engineer} at {\bf 1\amper{}1 Internet SE} in Karlsruhe, Germany\\
+\years{2013-2018}{\bf Test Engineer} at {\bf 1\amper{}1 Internet SE} in Karlsruhe, Germany\\
+\years{2010-2013}{\bf Test Analyst} at {\bf Atos Worldline GmbH} in Frankfurt, Germany\\
+\years{2009-2010}{\bf Software Developer} at {\bf Fraunhofer IPM} in Freiburg, Germany\\
+
+\section*{Education}
+\years{2009} {\bf Dipl.-Ing. (FH)} in Electrical Engineering at Hochschule Karlsruhe, Germany\\
+Thesis: \emph{"Development of an automated image analysis software for a fluorescence--based data acquisition system for the detection of airborne microorganisms"}
+
+\section*{Languages}
+German: Native, English: Fluent, Spanish: Fluent, Italian: Learning
+\end{document}
