@@ -1,11 +1,12 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
-\documentclass[10pt, a4paper]{article}
-\usepackage{fontspec} 
+
+\documentclass[9pt, a4paper]{extarticle}
+\usepackage{fontspec}
 
 % DOCUMENT LAYOUT
-\usepackage{geometry} 
-\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.5in}
+\usepackage{geometry}
+\geometry{a4paper, textwidth=6in, textheight=9in, marginparsep=5.5pt, marginparwidth=.5in}
 \setlength\parindent{0in}
 
 % FONTS
@@ -14,7 +15,7 @@
 \defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
 \setromanfont [Ligatures={Common}, BoldFont={Fontin Bold}, ItalicFont={Fontin Italic}]{Fontin}
 \setsansfont [Ligatures={Common}, BoldFont={Fontin Sans Bold}, ItalicFont={Fontin Sans Italic}]{Fontin Sans}
-\setmonofont[Scale=0.8]{Monaco} 
+\setmonofont[Scale=0.8]{Monaco}
 % ---- CUSTOM AMPERSAND
 \newcommand{\amper}{{\fontspec[Scale=.95]{Fontin}\selectfont\itshape\&}}
 % ---- MARGIN YEARS
@@ -25,14 +26,14 @@
 \reversemarginpar
 
 % HEADINGS
-\usepackage{sectsty} 
-\usepackage[normalem]{ulem} 
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
 \sectionfont{\rmfamily\mdseries\upshape\Large}
-\subsectionfont{\rmfamily\bfseries\upshape\normalsize} 
-\subsubsectionfont{\rmfamily\mdseries\upshape\normalsize} 
+\subsectionfont{\rmfamily\bfseries\upshape\normalsize}
+\subsubsectionfont{\rmfamily\mdseries\upshape\normalsize}
 
-\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={CV Gabriel Diegel},pdfauthor={Gabriel Diegel}]{hyperref}  
-\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={CV Gabriel Diegel},pdfauthor={Gabriel Diegel}]{hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue}
 
 % DOCUMENT
 \begin{document}
@@ -41,23 +42,22 @@ Av. Grau 490\\
 \texttt{15046} Lima, Perú\\[.2cm]
 Fecha de nacimiento: 20 de Diciembre de 1982\\
 Nacionalidad: alemán\\[.2cm]
-Teléfonos: \texttt{+4917664181625}\\
 Correo electrónico: \href{mailto:gabriel.diegel@icloud.com}{gabriel.diegel@icloud.com}\\
 
-%%\hrule
 \section*{Última posición}
-{\bf Software Engineer}, Tekton, Lima, Perú
+{\bf Software Engineer} en {\bf Tekton} en Lima, Perú
 
-%\hrule
-\section*{Habilidades}
-\subsection*{Lenguajes de programación}
-Java, Groovy, Kotlin, Python, R
-\subsection*{Tecnologías}
-Maven, Spring Boot, Docker, JUnit5, Selenium Webdriver, Protractor, Git, GitlabCI, Jenkins, GoCD, Grafana, Tableau, Ansible, Kubernetes
+\section*{Especializado en}
+Cloud-native Software Development, Continuous Delivery, Automated Acceptance Testing
 
-%\hrule
+\section*{Lenguajes de programación}
+Java, Python, Groovy, Kotlin, R
+
+\section*{Tecnologías}
+Spring Boot, Maven, Docker, JUnit5, Selenium Webdriver, Git, GitlabCI, Jenkins, Kubernetes, PostgreSQL, Azure, AWS
+
 \section*{Experiencia profesional}
-\years{2019-current}{\bf Software Engineer} Tekton, Lima, Peru\\
+\years{2019-current}{\bf Software Engineer} Tekton, Lima, Perú\\
 $\bullet$ Desarollé backend en Spring Boot para cliente peruano\\
 $\bullet$ Desarollé conjunto de pruebas de aceptación para frontend y la integración con CI para cliente de EEUU\\
 $\bullet$ Desarollé conjunto de pruebas de aceptación para backend para un nuevo CMS para cliente de EEUU\\
@@ -81,35 +81,26 @@ $\bullet$ Implementé un programa de automatización para pruebas de aceptación
 $\bullet$ Desarollé herramientas de CLI con Python para el gestionar datos de prueba extrayendo datos del mainframe, filtrándolos y cargándolos automaticamente en la base de datos Oracle\\
 $\bullet$ Analizé errores de sistema y apoyé al equipo de desarollo resolviendo incidentes de producción\\
 $\bullet$ Introduje y administré un servidor SVN para el equipo QA\\[.2cm]
-\years{2009--2010}{\bf Research Assistant} Fraunhofer IPM, Freiburg, Alemania\\
+\years{2009--2010}{\bf Software Engineer} Fraunhofer IPM, Freiburg, Alemania\\
 $\bullet$ Desarollé un software de control para un sistema automatizado de detección de partículas en Matlab\\
 $\bullet$ Integré un sistema rápido de adquisición de datos basado en hardware
 
-%\hrule
 \section*{Formación Académica}
 \years{2009} {\bf Dipl.-Ing. (FH)} en Ingenieria Eléctrica, Hochschule Karlsruhe---Technik und Wirtschaft, Karlsruhe, Alemania\\
 Título de tesis: \emph{"Development of an automated image analysis software for a fluorescence--based data acquisition system for the detection of airborne microorganisms"}
 
-%\hrule
-\section*{Certificados}
-$\bullet$ ISTQB Certified Tester: Foundation Level
-
-%\hrule
 \section*{Idiomas}
 $\bullet$ alemán: Competencia nativa\\
 $\bullet$ español: Competencia profesional de trabajo\\
-$\bullet$ inglés: Competencia profesional plena
+$\bullet$ inglés: Competencia profesional plena\\
+$\bullet$ italiano: Aprendiendo
 
-%\hrule
-\section*{Aficiones}
-Escribir, viajar y cocinar\\
-
-%\hrule
 \section*{Artículos}
-\years{2015} \href{https://gitlab.com/gdiegel/writing-public/blob/master/custom\_assertions.md}{"Take your testing DSL to the next level with custom assertions"}\\
-\years{2016} \href{https://gitlab.com/gdiegel/writing-public/blob/master/junit5_feeble_screams_from_forests_well_known.md}{"JUnit5--Feeble screams from forests well known"}\\
-\years{2017} \href{https://gitlab.com/gdiegel/writing-public/blob/master/neo\_problem\_spring.md}{"Using neo-problem with a pure Spring Boot service"}\\
-\years{2018} \href{https://gitlab.com/gdiegel/writing-public/blob/master/custom\_test\_engine\_with\_kotlin.md}{"Writing a custom test engine with Kotlin"}\\
-\years{2019} \href{https://gitlab.com/gdiegel/writing-public/blob/master/automated\_acceptance\_testing.md}{"Automated acceptance testing"}\\
-\years{2019} \href{https://gitlab.com/gdiegel/writing-public/blob/master/gitlabci\_best\_practices.md}{"Running acceptance tests on GitlabCI"}
+\years{2015} \href{https://github.com/gdiegel/writing-public/blob/master/custom\_assertions.md}{"Take your testing DSL to the next level with custom assertions"}\\
+\years{2016} \href{https://github.com/gdiegel/writing-public/blob/master/junit5_feeble_screams_from_forests_well_known.md}{"JUnit5--Feeble screams from forests well known"}\\
+\years{2017} \href{https://github.com/gdiegel/writing-public/blob/master/neo\_problem\_spring.md}{"Using neo-problem with a pure Spring Boot service"}\\
+\years{2018} \href{https://github.com/gdiegel/writing-public/blob/master/custom\_test\_engine\_with\_kotlin.md}{"Writing a custom test engine with Kotlin"}\\
+\years{2019} \href{https://github.com/gdiegel/writing-public/blob/master/automated\_acceptance\_testing.md}{"Automated acceptance testing"}\\
+\years{2019} \href{https://github.com/gdiegel/writing-public/blob/master/gitlabci\_best\_practices.md}{"Running acceptance tests on GitlabCI"}
+
 \end{document}
