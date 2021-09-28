@@ -1,12 +1,12 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-\documentclass[10pt, a4paper]{article}
+\documentclass[9pt, a4paper]{extarticle}
 \usepackage{fontspec} 
 
 % DOCUMENT LAYOUT
 \usepackage{geometry} 
-\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.5in}
+\geometry{a4paper, textwidth=6in, textheight=9in, marginparsep=5.5pt, marginparwidth=.5in}
 \setlength\parindent{0in}
 
 % FONTS
@@ -37,40 +37,33 @@
 
 % DOCUMENT
 \begin{document}
-{\LARGE Gabriel Diegel}\\[1cm]
-Av. Grau 490\\
-\texttt{15074} Lima, Peru\\[.2cm]
-Born: December 20, 1982\\
-Nationality: German\\[.2cm]
-Phone: \texttt{+51912158986}\\
-email: \href{mailto:gabriel.diegel@icloud.com}{gabriel.diegel@icloud.com}\\
+{\bf \LARGE Gabriel Diegel}\\[0.1cm]
+Lima, Peru\\[0.1cm]
+Email: \href{mailto:gabriel.diegel@icloud.com}{gabriel.diegel@icloud.com}\\[0.1cm]
+Github: \href{https://github.com/gdiegel}{https://github.com/gdiegel}\\
 
-%%\hrule
 \section*{Currently}
-{\bf Software Engineer}, Tekton, Lima, Peru
+{\bf Software Engineer} at {\bf Tekton} in Lima, Peru
 
-%%\hrule
 \section*{Specialized in}
-Software Development, Continuous Delivery, Automation
+Cloud-native Software Development, Continuous Delivery, Automated Acceptance Testing
 
-%\hrule
-\section*{Skills}
-\subsection*{Programming languages}
-Java, Kotlin, Groovy, Python, R
-\subsection*{Technologies}
-Spring Boot, Maven, Docker, JUnit5, Selenium Webdriver, Git, GitlabCI, Jenkins, GoCD, Grafana, Ansible, Kubernetes, PostgreSQL, InfluxDB, Azure
+\section*{Programming languages}
+Java, Python, Groovy, Kotlin, Javascript, R
 
-%\hrule
+\section*{Technologies}
+Spring Boot, Maven, Docker, JUnit5, Selenium Webdriver, Git, GitlabCI, Jenkins, Kubernetes, PostgreSQL, Azure, AWS
+
 \section*{Experience}
 \years{2019-current}{\bf Software Engineer} Tekton, Lima, Peru\\
 $\bullet$ Developed backend with Spring Boot for Peruvian bank\\
 $\bullet$ Developed automated frontend acceptance test suite and integrated with CI for US client\\
 $\bullet$ Developed automated backend acceptance test suite for new CMS for US client\\[.2cm]
 \years{2018-2019}{\bf Senior Test Engineer} 1\amper{}1 Internet SE, Karlsruhe, Germany\\
-$\bullet$ Developed modular test strategy and tooling for web--based frontend tests\\
+$\bullet$ Developed modular test strategy, tooling and reporting for web--based frontend tests\\
 $\bullet$ Developed and supported strategy and framework for integrating functional acceptance tests into company-wide continuous delivery framework\\
-$\bullet$ Planned, executed and analysed performance tests for next-gen backend store architecture and Single-Sign-On solution\\
-$\bullet$ Advised on and implemented metrics and data gathering approach, analyzed and visualized data in Grafana\\
+$\bullet$ Planned, executed and analysed performance tests for next-gen backend store architecture and Single-Sign-On
+solution, implemented metrics and data gathering in InfluxDB, analyzed and visualized data in Grafana\\
 $\bullet$ Supervised theses of graduate students\\
 $\bullet$ Lead test automation guild\\[.2cm]
 \years{2013-2018}{\bf Test Engineer} 1\amper{}1 Internet SE, Karlsruhe, Germany\\
@@ -81,35 +74,17 @@ $\bullet$ Developed RESTful web service with Spring Boot for collecting metrics 
 $\bullet$ Analyzed and tested data reports drawn from large-scale customer data and transaction database\\
 $\bullet$ Developed a CLI tool in Python for test data management extracting data from mainframe database, filtering and automatically loading into Oracle databases\\
 $\bullet$ Introduced and administrated SVN server for QA team\\[.2cm]
-\years{2009-2010}{\bf Research Assistant} Fraunhofer IPM, Freiburg, Germany\\
-$\bullet$ Developed software for an automated particle detection system in Matlab\\
+\years{2009-2010}{\bf Software Engineer} Fraunhofer IPM, Freiburg, Germany\\
+$\bullet$ Developed software for an automated particle detection system\\
 $\bullet$ Integrated a fast hardware--based data acquisition system
 
-%\hrule
 \section*{Education}
-\years{2009} {\bf Dipl.-Ing. (FH)} in Electrical Engineering, Hochschule Karlsruhe, Germany\\
-Thesis title: \emph{"Development of an automated image analysis software for a fluorescence--based data acquisition system for the detection of airborne microorganisms"}
+\years{2009} {\bf Dipl.-Ing. (FH)} in Electrical Engineering at Hochschule Karlsruhe, Germany\\
+Thesis: \emph{"Development of an automated image analysis software for a fluorescence--based data acquisition system for the detection of airborne microorganisms"}
 
-%\hrule
-\section*{Certifications}
-$\bullet$ ISTQB Certified Tester: Foundation Level
-
-%\hrule
 \section*{Languages}
-$\bullet$ German: Native tongue\\
-$\bullet$ English: Fluent\\
-$\bullet$ Spanish: Fluent
-
-%\hrule
-\section*{Hobbies}
-Weightlifting, Writing, Cooking\\
-
-%\hrule
-\section*{Articles}
-\years{2015} \href{https://github.com/gdiegel/writing-public/blob/master/custom\_assertions.md}{"Take your testing DSL to the next level with custom assertions"}\\
-\years{2016} \href{https://github.com/gdiegel/writing-public/blob/master/junit5\_feeble\_screams\_from\_forests\_well\_known.md}{"JUnit5---Feeble screams from forests well known"}\\
-\years{2017} \href{https://github.com/gdiegel/writing-public/blob/master/neo\_problem\_spring.md}{"Using neo-problem with a pure Spring Boot service"}\\
-\years{2018} \href{https://github.com/gdiegel/writing-public/blob/master/custom\_test\_engine\_with\_kotlin.md}{"Writing a custom test engine with Kotlin"}\\
-\years{2019} \href{https://github.com/gdiegel/writing-public/blob/master/automated\_acceptance\_testing.md}{"Automated acceptance testing"}\\
-\years{2019} \href{https://github.com/gdiegel/writing-public/blob/master/gitlabci\_best\_practices.md}{"Running acceptance tests on GitlabCI"}
+German: Native\\
+English: Fluent\\
+Spanish: Fluent\\
+Italian: Learning
 \end{document}
